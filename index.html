@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Kerl Parantar | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="nav">
+      <a class="logo" href="#home">Jekey</a>
+      <button class="menu" aria-label="Toggle Navigation">☰</button>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div>
+        <p class="label">BACHELOR OF INFORMATION TECHNOLOGY · 4TH YEAR</p>
+        <h1>John Kerl<br>Parantar<span>.</span></h1>
+        <p class="intro">An aspiring software developer who enjoys building practical web and mobile applications and
+          learning through real-world projects.</p>
+        <div class="buttons"><a class="button dark" href="#projects">View Projects</a><a class="button light"
+            href="https://github.com/quiorrajkey" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+      </div>
+      <div class="hero-meta">
+        <div class="line"></div>
+        <p>Currently studying at</p><strong>University of Mindanao</strong>
+        <p>College of Computing Education</p>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-label">01 — ABOUT</div>
+      <div class="two-col">
+        <h2>Learning by<br>building.</h2>
+        <div class="copy">
+          <p>I am a fourth-year Bachelor of Information Technology student under the College of Computing Education at
+            the University of Mindanao.</p>
+          <p>I enjoy turning ideas into working software and solving problems through technology. My project experience
+            includes web development, mobile development, databases, Python, machine learning, and application design.
+          </p>
+          <p>For my OJT, I am looking forward to working with a professional team, improving my technical skills,
+            learning industry practices, and contributing to real-world software projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <div class="section-label">02 — SKILLS</div>
+      <div class="section-body">
+        <h2>Technologies I<br>work with.</h2>
+        <div class="skills">
+          <div class="skill"><b>Languages</b><span>PHP · Python · JavaScript · Dart · SQL</span></div>
+          <div class="skill"><b>Frameworks</b><span>Laravel · Flutter · Flask · Streamlit · React Native / Expo</span>
+          </div>
+          <div class="skill"><b>Databases</b><span>MySQL · PostgreSQL · Supabase</span></div>
+          <div class="skill"><b>Tools</b><span>Git · GitHub · VS Code · Docker · Figma · Postman</span></div>
+          <div class="skill"><b>Development</b><span>REST APIs · CRUD · Authentication · UI/UX · Database Design</span>
+          </div>
+          <div class="skill"><b>Data & AI</b><span>Python · Data Preprocessing · Machine Learning · Model
+              Comparison</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-label">03 — PROJECTS</div>
+      <div class="section-heading">
+        <h2>My Projects.</h2><a href="https://github.com/quiorrajkey?tab=repositories" target="_blank"
+          rel="noopener noreferrer">View all GitHub repositories ↗</a>
+      </div>
+      <div class="projects">
+        <!-- Project 1: ERP System (IT15) -->
+        <article class="project">
+          <div class="project-img-wrap"
+            onclick="openCertModal('projects/erp-system.png', 'Enterprise Resource Planning System (OpenBook HRIS) — IT15')"
+            title="Click to view full screenshot">
+            <img src="projects/erp-system.png" alt="Enterprise Resource Planning System Screenshot" loading="lazy">
+            <div class="project-img-overlay"><span>🔍 View Project</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-top"><span>01</span><span>FULL-STACK · IT15</span></div>
+            <h3>Enterprise Resource Planning System</h3>
+            <p>A C# ERP system designed to manage business operations, records, users, transactions, and core
+              administrative workflows in one application.</p>
+            <div class="project-bottom">
+              <div class="tags"><span>C#</span><span>ERP</span><span>SQL</span><span>Desktop</span></div>
+              <a class="project-link" href="https://github.com/gabgab-v/IT15_2.git" target="_blank"
+                rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Pabukid App -->
+        <article class="project">
+          <div class="project-img-wrap"
+            onclick="openCertModal('projects/pabukid-mobile.png', 'Pabukid App — Android Mobile Application')"
+            title="Click to view full screenshot">
+            <img src="projects/pabukid-mobile.png" alt="Pabukid App Screenshot" loading="lazy">
+            <div class="project-img-overlay"><span>🔍 View Project</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-top"><span>02</span><span>MOBILE · ANDROID</span></div>
+            <h3>Pabukid App</h3>
+            <p>An Android mobile hiking and outdoor adventure booking platform featuring GPS trail maps, climb package
+              listings, organizer verification, and seamless event reservations.</p>
+            <div class="project-bottom">
+              <div class="tags"><span>React Native</span><span>Expo</span><span>Android</span><span>Booking
+                  System</span></div>
+              <a class="project-link" href="https://github.com/quiorrajkey" target="_blank"
+                rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Delivery Management Platform (IT_26) -->
+        <article class="project">
+          <div class="project-img-wrap"
+            onclick="openCertModal('projects/delivery-platform.png', 'Delivery Management Platform — IT_26')"
+            title="Click to view full screenshot">
+            <img src="projects/delivery-platform.png" alt="Delivery Management Platform Admin Dashboard Screenshot"
+              loading="lazy">
+            <div class="project-img-overlay"><span>🔍 View Project</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-top"><span>03</span><span>WEBSITE · IT_26</span></div>
+            <h3>Delivery Management Platform</h3>
+            <p>A Laravel/Blade and PHP delivery platform combining customers, delivery users, parcels, tracking, and
+              administrative workflows in one web system.</p>
+            <div class="project-bottom">
+              <div class="tags"><span>Laravel</span><span>PHP</span><span>Blade</span><span>SQL</span></div>
+              <a class="project-link" href="https://github.com/quiorrajkey/IT_26" target="_blank"
+                rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Inventory System (IT12) -->
+        <article class="project">
+          <div class="project-img-wrap"
+            onclick="openCertModal('projects/inventory-system.png', 'Inventory System for Modern Time Enterprises Inc. — IT12')"
+            title="Click to view full screenshot">
+            <img src="projects/inventory-system.png" alt="Inventory System for Modern Time Enterprises Inc. Screenshot"
+              loading="lazy">
+            <div class="project-img-overlay"><span>🔍 View Project</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-top"><span>04</span><span>INVENTORY &amp; WEB · IT12</span></div>
+            <h3>Inventory System for Modern Time Enterprises Inc.</h3>
+            <p>A web-based inventory and sales management system featuring item cataloging, stock level monitoring,
+              sales transactions, supplier management, and an administrative control panel.</p>
+            <div class="project-bottom">
+              <div class="tags"><span>PHP</span><span>MySQL</span><span>CRUD</span><span>Inventory</span></div>
+              <a class="project-link" href="https://github.com/quiorrajkey/IT12FinalProject.git" target="_blank"
+                rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="future"><b>Portfolio Note:</b> Project repositories, mobile applications, and web platforms are
+        actively maintained on <a href="https://github.com/quiorrajkey?tab=repositories" target="_blank"
+          rel="noopener noreferrer" style="text-decoration: underline; font-weight: 600;">GitHub ↗</a>.</div>
+    </section>
+
+    <section id="certificates" class="section container">
+      <div class="section-label">04 — CERTIFICATES</div>
+      <div class="section-heading">
+        <h2>Credentials &amp;<br>certifications.</h2>
+        <p class="section-desc">Official industry certifications and technical training completed.</p>
+      </div>
+
+      <div class="certificates">
+        <!-- Certificate 1: Networking -->
+        <article class="cert-card">
+          <div class="cert-img-wrap"
+            onclick="openCertModal('certificates/networking-specialist.png', 'Information Technology Specialist — Networking')"
+            title="Click to view certificate">
+            <img src="certificates/networking-specialist.png"
+              alt="Information Technology Specialist Networking Certificate" loading="lazy">
+            <div class="cert-img-overlay"><span>🔍 View Certificate</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-top"><span>01</span><span>IT SPECIALIST · PEARSON VUE</span></div>
+            <div class="cert-meta">
+              <span class="cert-issuer">Certiport / CertNexus / Pearson</span>
+              <span class="cert-date">March 12, 2025</span>
+            </div>
+            <h3>Networking</h3>
+            <p>Official Information Technology Specialist certification validating foundational networking knowledge, IP
+              addressing (IPv4/IPv6), subnetting, network architectures, and core networking services.</p>
+            <div class="cert-verify-badge">
+              <span>Verification Code: <strong>8WBp-uSP8</strong></span>
+              <a href="https://verify.certiport.com" target="_blank" rel="noopener noreferrer">verify.certiport.com
+                ↗</a>
+            </div>
+            <div class="tags">
+              <span>Networking</span><span>TCP/IP</span><span>IPv4 / IPv6</span><span>Network Infrastructure</span>
+            </div>
+            <div class="cert-actions">
+              <button class="button dark small" type="button"
+                onclick="openCertModal('certificates/networking-specialist.png', 'Information Technology Specialist — Networking')">View
+                Photo</button>
+              <a class="button light small" href="certificates/networking-specialist.pdf" target="_blank">View PDF ↗</a>
+              <a class="button light small" href="https://verify.certiport.com" target="_blank"
+                rel="noopener noreferrer">Verify ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Certificate 2: Network Security -->
+        <article class="cert-card">
+          <div class="cert-img-wrap"
+            onclick="openCertModal('certificates/network-security-specialist.png', 'Information Technology Specialist — Network Security')"
+            title="Click to view certificate">
+            <img src="certificates/network-security-specialist.png"
+              alt="Information Technology Specialist Network Security Certificate" loading="lazy">
+            <div class="cert-img-overlay"><span>🔍 View Certificate</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-top"><span>02</span><span>IT SPECIALIST · PEARSON VUE</span></div>
+            <div class="cert-meta">
+              <span class="cert-issuer">Certiport / CertNexus / Pearson</span>
+              <span class="cert-date">December 11, 2025</span>
+            </div>
+            <h3>Network Security</h3>
+            <p>Official Information Technology Specialist certification covering security defense layers,
+              authentication, access control mechanisms, firewall policies, encryption, and threat mitigation.</p>
+            <div class="cert-verify-badge">
+              <span>Verification Code: <strong>cJaV-uSPz</strong></span>
+              <a href="https://verify.certiport.com" target="_blank" rel="noopener noreferrer">verify.certiport.com
+                ↗</a>
+            </div>
+            <div class="tags">
+              <span>Network Security</span><span>Access Control</span><span>Firewalls</span><span>Threat Defense</span>
+            </div>
+            <div class="cert-actions">
+              <button class="button dark small" type="button"
+                onclick="openCertModal('certificates/network-security-specialist.png', 'Information Technology Specialist — Network Security')">View
+                Photo</button>
+              <a class="button light small" href="certificates/network-security-specialist.pdf" target="_blank">View PDF
+                ↗</a>
+              <a class="button light small" href="https://verify.certiport.com" target="_blank"
+                rel="noopener noreferrer">Verify ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Certificate 3: HTML and CSS -->
+        <article class="cert-card">
+          <div class="cert-img-wrap"
+            onclick="openCertModal('certificates/html-css-specialist.png', 'Information Technology Specialist — HTML and CSS')"
+            title="Click to view certificate">
+            <img src="certificates/html-css-specialist.png"
+              alt="Information Technology Specialist HTML and CSS Certificate" loading="lazy">
+            <div class="cert-img-overlay"><span>🔍 View Certificate</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-top"><span>03</span><span>IT SPECIALIST · PEARSON VUE</span></div>
+            <div class="cert-meta">
+              <span class="cert-issuer">Certiport / CertNexus / Pearson</span>
+              <span class="cert-date">December 19, 2024</span>
+            </div>
+            <h3>HTML and CSS</h3>
+            <p>Official Information Technology Specialist certification validating expertise in semantic HTML5
+              structure, modern CSS3 styling, responsive layouts, media queries, and web presentation standards.</p>
+            <div class="cert-verify-badge">
+              <span>Verification Code: <strong>848S-uSrs</strong></span>
+              <a href="https://verify.certiport.com" target="_blank" rel="noopener noreferrer">verify.certiport.com
+                ↗</a>
+            </div>
+            <div class="tags">
+              <span>HTML5</span><span>CSS3</span><span>Responsive Web Design</span><span>Web Standards</span>
+            </div>
+            <div class="cert-actions">
+              <button class="button dark small" type="button"
+                onclick="openCertModal('certificates/html-css-specialist.png', 'Information Technology Specialist — HTML and CSS')">View
+                Photo</button>
+              <a class="button light small" href="certificates/html-css-specialist.pdf" target="_blank">View PDF ↗</a>
+              <a class="button light small" href="https://verify.certiport.com" target="_blank"
+                rel="noopener noreferrer">Verify ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Certificate 4: Git & GitHub and React.js Training -->
+        <article class="cert-card">
+          <div class="cert-img-wrap"
+            onclick="openCertModal('certificates/git-github-react-training.png', 'Certificate of Completion — Git &amp; GitHub and React.js Training')"
+            title="Click to view certificate">
+            <img src="certificates/git-github-react-training.png"
+              alt="Git and GitHub and React.js Training Certificate of Completion" loading="lazy">
+            <div class="cert-img-overlay"><span>🔍 View Certificate</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-top"><span>04</span><span>TRAINING · UM CCE SKILLS CLINIC</span></div>
+            <div class="cert-meta">
+              <span class="cert-issuer">University of Mindanao · CCE Skills Clinic</span>
+              <span class="cert-date">September 05, 2026</span>
+            </div>
+            <h3>Git &amp; GitHub and React.js Training</h3>
+            <p>Certificate of Completion conducted by the College of Computing Education Skills Clinic Mentors at
+              E-Resources LIC, University of Mindanao, covering version control workflows and React component
+              development.</p>
+            <div class="cert-verify-badge">
+              <span>Venue: <strong>E-Resources LIC, UM Davao City</strong></span>
+              <span>Lead: <strong>Kent Jude Sendrejas / Ramcis Vilchez, DIT</strong></span>
+            </div>
+            <div class="tags">
+              <span>Git</span><span>GitHub</span><span>React.js</span><span>Team Collaboration</span>
+            </div>
+            <div class="cert-actions">
+              <button class="button dark small" type="button"
+                onclick="openCertModal('certificates/git-github-react-training.png', 'Certificate of Completion — Git &amp; GitHub and React.js Training')">View
+                Photo</button>
+              <a class="button light small" href="certificates/git-github-react-training.pdf" target="_blank">View PDF
+                ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section container">
+      <div class="section-label">05 — EDUCATION</div>
+      <div class="education">
+        <!-- Education 1: University of Mindanao -->
+        <div class="education-item">
+          <h2>University of<br>Mindanao</h2>
+          <div class="edu-details">
+            <span class="edu-year">2021 — Present</span>
+            <p>College of Computing Education</p>
+            <h3>Bachelor of Information Technology</h3>
+            <p>4th Year Student</p>
+          </div>
+        </div>
+
+        <!-- Education 2: Brokenshire College - Toril -->
+        <div class="education-item">
+          <h2>Brokenshire<br>College – Toril</h2>
+          <div class="edu-details">
+            <span class="edu-year">Graduated 2021</span>
+            <p>Senior High School</p>
+            <h3>Technical Vocational Livelihood</h3>
+            <p>Information and Communications Technology</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="cta container">
+      <p class="label">06 — CONTACT &amp; OJT</p>
+      <h2>Ready to learn.<br>Ready to contribute.</h2>
+      <p>I am seeking an OJT opportunity where I can apply my technical foundation, learn from experienced
+        professionals, and contribute to meaningful software projects.</p>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:parantar.jk@gmail.com">
+          <div class="contact-card-icon">✉</div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">Email Address</span>
+            <strong class="contact-card-value">Parantar.jk@gmail.com</strong>
+          </div>
+        </a>
+
+        <a class="contact-card" href="tel:09939578087">
+          <div class="contact-card-icon">📞</div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">Contact Number</span>
+            <strong class="contact-card-value">09939578087</strong>
+          </div>
+        </a>
+
+        <a class="contact-card" href="https://github.com/quiorrajkey" target="_blank" rel="noopener noreferrer">
+          <div class="contact-card-icon">🐙</div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">GitHub Profile</span>
+            <strong class="contact-card-value">github.com/quiorrajkey ↗</strong>
+          </div>
+        </a>
+      </div>
+
+      <div class="cta-actions">
+        <a class="button dark" href="mailto:Parantar.jk@gmail.com">Get in touch</a>
+        <a class="button light" href="tel:09939578087">Call / Text</a>
+        <a class="button light" href="https://github.com/quiorrajkey" target="_blank" rel="noopener noreferrer">GitHub
+          Profile ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>John Kerl Parantar</strong><span>BSIT Student · University of Mindanao</span></div>
+      <div class="footer-links">
+        <a href="mailto:Parantar.jk@gmail.com">Parantar.jk@gmail.com</a>
+        <a href="tel:09939578087">09939578087</a>
+        <a href="https://github.com/quiorrajkey" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <small>© <span id="year"></span> John Kerl Parantar</small>
+    </div>
+  </footer>
+
+  <!-- Certificate Lightbox Modal -->
+  <div id="certModal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" onclick="closeCertModal()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeCertModal()" aria-label="Close modal">✕</button>
+      <img id="modalImg" src="" alt="Certificate Preview">
+      <p id="modalCaption" class="modal-caption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
